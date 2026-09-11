@@ -11,16 +11,18 @@ function Skills() {
 
       <div className="skills-list">
 
+
+
         <div className="skill-row">
 
           <span>01</span>
 
           <h3>
-            Programming
+            Languages
           </h3>
 
           <p>
-            JavaScript
+            HTML5 · CSS · JavaScript
           </p>
 
         </div>
@@ -30,12 +32,11 @@ function Skills() {
           <span>02</span>
 
           <h3>
-            Frontend
+            Tools
           </h3>
 
           <p>
-             React.js · HTML5 ·
-            CSS · Bootstrap
+            Git · GitHub · VS Code · Figma
           </p>
 
         </div>
@@ -45,11 +46,11 @@ function Skills() {
           <span>03</span>
 
           <h3>
-            Tools
+            Framework & Libraries
           </h3>
 
           <p>
-            Git · GitHub · VS Code · Figma
+            React.js · Bootstrap
           </p>
 
         </div>
