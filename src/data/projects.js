@@ -1,12 +1,8 @@
 export const projects = [
-
   {
     id: 1,
-
     title: "Slide Me",
-
     type: "Web Application",
-
     description:
       "ระบบเรียกรถสไลด์สำหรับผู้ใช้ที่ประสบปัญหารถเสียหรือเกิดอุบัติเหตุ",
 
@@ -20,7 +16,7 @@ export const projects = [
       "MySQL",
     ],
 
-    image: "/projects/slide-me.png",
+    image: "/Portfolio/projects/slide-me.png",
 
     github:
       "https://github.com/Pasutken/Slide-Me.git",
@@ -28,17 +24,13 @@ export const projects = [
     figma:
       "https://www.figma.com/design/3hXOse2zF3cjHUaEw7Loor/Slide-Me?node-id=0-1&t=6oIpkopkwWNQFdYM-1",
 
-    demo:
-      "",
+    demo: "",
   },
 
   {
     id: 2,
-
     title: "Parking",
-
     type: "Web Application",
-
     description:
       "ระบบค้นหาลานจอดรถและตรวจสอบพื้นที่จอดรถที่ว่าง",
 
@@ -53,7 +45,7 @@ export const projects = [
       "Bootstrap",
     ],
 
-    image: "/projects/parking.png",
+    image: "/Portfolio/projects/parking.png",
 
     github:
       "https://github.com/Pasutken/Parking.git",
@@ -61,17 +53,13 @@ export const projects = [
     figma:
       "https://www.figma.com/design/grxSA5zH59WfQOxYYhE60i/Figma-file-Project?node-id=0-1&t=6kF567ZEiRbSjrMG-1",
 
-    demo:
-      "",
+    demo: "",
   },
 
   {
     id: 3,
-
     title: "Order Chinese Tables Online",
-
     type: "Web Application",
-
     description:
       "ระบบสั่งโต๊ะจีนออนไลน์สำหรับเลือกชุดโต๊ะจีนและเปรียบเทียบราคา",
 
@@ -86,7 +74,7 @@ export const projects = [
       "Bootstrap",
     ],
 
-    image: "/projects/chinese-table.png",
+    image: "/Portfolio/projects/chinese-table.png",
 
     github:
       "https://github.com/Pasutken/Order-Chinese-Tables-Online.git",
@@ -94,17 +82,13 @@ export const projects = [
     figma:
       "https://www.figma.com/design/U5N7ZT0QsC8786hztI8XWS/Order-Chinese-Tables-Online?node-id=0-1&t=cjIxvkHPz9w9xzDi-1",
 
-    demo:
-      "",
+    demo: "",
   },
 
   {
     id: 4,
-
     title: "Beauty Shop",
-
     type: "E-Commerce",
-
     description:
       "ระบบร้านค้าออนไลน์สำหรับจำหน่ายเครื่องสำอาง",
 
@@ -117,25 +101,19 @@ export const projects = [
       "Bootstrap",
     ],
 
-    image: "/projects/beauty-shop.png",
+    image: "/Portfolio/projects/beauty-shop.png",
 
     github:
-        "https://github.com/Pasutken/Beauty-Shop.git",
+      "https://github.com/Pasutken/Beauty-Shop.git",
 
-    figma:
-      "",
-
-    demo:
-      "",
+    figma: "",
+    demo: "",
   },
 
   {
     id: 5,
-
     title: "FuturePath",
-
     type: "IT Career Platform",
-
     description:
       "ระบบแนะนำสายอาชีพ IT พร้อม Chatbot สำหรับให้คำแนะนำเกี่ยวกับสายอาชีพ",
 
@@ -148,15 +126,12 @@ export const projects = [
       "CSS",
     ],
 
-    image: "/projects/future-path.png",
+    image: "/Portfolio/projects/future-path.png",
 
     github:
-        "https://github.com/Pasutken/FuturePath.git",
+      "https://github.com/Pasutken/FuturePath.git",
 
-    figma:
-      "",
-
-    demo:
-      "",
+    figma: "",
+    demo: "",
   },
 ];

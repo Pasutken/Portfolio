@@ -1,5 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
-
 function Hero() {
   const scrollToProjects = () => {
     document
@@ -10,20 +8,28 @@ function Hero() {
   };
 
   return (
-    <section id="home" className="hero container">
-
+    <section
+      id="home"
+      className="hero container"
+    >
+      {/* LEFT */}
       <div className="hero-content">
 
-        <p className="eyebrow">
-          PORTFOLIO / 2026
-        </p>
+        <div className="hero-meta">
+          <p className="eyebrow">
+            PORTFOLIO / 2026
+          </p>
+
+          <div className="hero-name">
+            <span>PASUT</span>
+            <span>FAKCHAENG</span>
+          </div>
+        </div>
 
         <h1>
           Frontend Developer
           <br />
-          <span>
-            & UX / UI Designer.
-          </span>
+          <span>& UX / UI Designer.</span>
         </h1>
 
         <p className="hero-description">
@@ -39,8 +45,10 @@ function Hero() {
             className="primary-button"
             onClick={scrollToProjects}
           >
-            View my work
-            <ArrowUpRight size={17} />
+            <span>View my work</span>
+            <span className="button-arrow">
+              ↗
+            </span>
           </button>
 
           <a
@@ -54,22 +62,31 @@ function Hero() {
 
       </div>
 
-      <div className="hero-side">
 
-        <div className="availability">
-          <span />
-          Open to opportunities
+      {/* RIGHT - PROFILE */}
+      <div className="hero-profile">
+
+        <div className="profile-frame">
+
+          <img
+            src="/Portfolio/profile/profile.png"
+            alt="Pasut Fakchaeng"
+            className="profile-image"
+          />
+
         </div>
 
-        <div className="hero-number">
-          01
-        </div>
+        <div className="profile-caption">
 
-        <p>
-          Based in Thailand
-          <br />
-          Building for the web.
-        </p>
+          <span>01</span>
+
+          <p>
+            Designer & Developer
+            <br />
+            Creating for the web.
+          </p>
+
+        </div>
 
       </div>
 

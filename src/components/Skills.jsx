@@ -16,12 +16,11 @@ function Skills() {
           <span>01</span>
 
           <h3>
-            Frontend
+            Programming
           </h3>
 
           <p>
-            JavaScript · React.js · HTML5 ·
-            CSS3 · Bootstrap
+            JavaScript
           </p>
 
         </div>
@@ -31,12 +30,12 @@ function Skills() {
           <span>02</span>
 
           <h3>
-            UX / UI
+            Frontend
           </h3>
 
           <p>
-            User Interface · User Experience ·
-            Responsive Design
+             React.js · HTML5 ·
+            CSS · Bootstrap
           </p>
 
         </div>
