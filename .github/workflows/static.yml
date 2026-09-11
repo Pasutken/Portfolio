@@ -1,9 +1,10 @@
-name: Deploy React Vite to GitHub Pages
+name: Deploy React to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
+
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -39,5 +40,4 @@ jobs:
           path: ./dist
 
       - name: Deploy
-        id: deployment
         uses: actions/deploy-pages@v4
