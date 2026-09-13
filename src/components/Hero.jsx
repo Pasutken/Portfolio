@@ -1,4 +1,4 @@
-function Hero() {
+function Hero({ t }) {
   const scrollToProjects = () => {
     document
       .getElementById("projects")
@@ -12,12 +12,11 @@ function Hero() {
       id="home"
       className="hero container"
     >
-      {/* LEFT */}
       <div className="hero-content">
 
         <div className="hero-meta">
           <p className="eyebrow">
-            PORTFOLIO / 2026
+            {t.hero.eyebrow}
           </p>
 
           <div className="hero-name">
@@ -27,16 +26,13 @@ function Hero() {
         </div>
 
         <h1>
-          Frontend Developer
+          {t.hero.title}
           <br />
-          <span>& UX / UI Designer.</span>
+          <span>{t.hero.subtitle}</span>
         </h1>
 
         <p className="hero-description">
-          I design and build clean, useful digital
-          experiences with a focus on frontend
-          development, user experience, and
-          responsive interfaces.
+          {t.hero.description}
         </p>
 
         <div className="hero-buttons">
@@ -45,7 +41,8 @@ function Hero() {
             className="primary-button"
             onClick={scrollToProjects}
           >
-            <span>View my work</span>
+            <span>{t.hero.work}</span>
+
             <span className="button-arrow">
               ↗
             </span>
@@ -55,15 +52,13 @@ function Hero() {
             className="secondary-button"
             href="#contact"
           >
-            Get in touch
+            {t.hero.contact}
           </a>
 
         </div>
 
       </div>
 
-
-      {/* RIGHT - PROFILE */}
       <div className="hero-profile">
 
         <div className="profile-frame">
@@ -81,9 +76,9 @@ function Hero() {
           <span>01</span>
 
           <p>
-            Designer & Developer
+            {t.hero.caption}
             <br />
-            Creating for the web.
+            {t.hero.caption2}
           </p>
 
         </div>

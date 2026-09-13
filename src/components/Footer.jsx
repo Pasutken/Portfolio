@@ -1,4 +1,4 @@
-function Footer() {
+function Footer({ t }) {
   return (
     <footer className="footer container">
 
@@ -9,11 +9,11 @@ function Footer() {
       <div>
 
         <a
-          href="#"
+          href="https://github.com/Pasutken"
           target="_blank"
           rel="noreferrer"
         >
-          GitHub
+          {t.footer.github}
         </a>
 
         <a
@@ -21,7 +21,7 @@ function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          Figma
+          {t.footer.figma}
         </a>
 
       </div>

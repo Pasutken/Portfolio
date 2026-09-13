@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-function Navbar() {
+function Navbar({ language, setLanguage, t }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollTo = (id) => {
@@ -30,28 +30,49 @@ function Navbar() {
             menuOpen ? "open" : ""
           }`}
         >
+          <button onClick={() => scrollTo("home")}>
+            {t.nav.home}
+          </button>
+
           <button onClick={() => scrollTo("about")}>
-            About
+            {t.nav.about}
           </button>
 
           <button onClick={() => scrollTo("projects")}>
-            Projects
+            {t.nav.projects}
           </button>
 
           <button onClick={() => scrollTo("skills")}>
-            Skills
+            {t.nav.skills}
           </button>
 
           <button onClick={() => scrollTo("contact")}>
-            Contact
+            {t.nav.contact}
           </button>
+
+          {/* Language Switch */}
+          <div className="language-switch">
+            <button
+              className={language === "th" ? "active" : ""}
+              onClick={() => setLanguage("th")}
+            >
+              TH
+            </button>
+
+            <span>/</span>
+
+            <button
+              className={language === "en" ? "active" : ""}
+              onClick={() => setLanguage("en")}
+            >
+              EN
+            </button>
+          </div>
         </div>
 
         <button
           className="menu-button"
-          onClick={() =>
-            setMenuOpen(!menuOpen)
-          }
+          onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? (
             <X size={22} />

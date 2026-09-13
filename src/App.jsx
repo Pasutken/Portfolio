@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -6,20 +8,31 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+import translations from "./data/translations";
+
 function App() {
+  // ภาษาเริ่มต้นเป็นภาษาไทย
+  const [language, setLanguage] = useState("th");
+
+  const t = translations[language];
+
   return (
     <>
-      <Navbar />
+      <Navbar
+        language={language}
+        setLanguage={setLanguage}
+        t={t}
+      />
 
       <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
+        <Hero t={t} />
+        <About t={t} />
+        <Projects t={t} />
+        <Skills t={t} />
+        <Contact t={t} />
       </main>
 
-      <Footer />
+      <Footer t={t} />
     </>
   );
 }

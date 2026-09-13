@@ -1,27 +1,30 @@
-function Contact() {
+function Contact({ t }) {
   return (
     <section
       id="contact"
       className="contact container"
     >
+
       <div className="section-label">
-        04 — CONTACT
+        {t.contact.label}
       </div>
 
       <div className="contact-content">
+
         <p>
-          Have a project or opportunity?
+          {t.contact.question}
         </p>
 
         <h2>
-          Let's make something
+          {t.contact.title}
           <br />
-          <span>useful.</span>
+          <span>
+            {t.contact.title2}
+          </span>
         </h2>
 
         <div className="contact-links">
 
-          {/* Email */}
           <a
             className="email-link"
             href="https://mail.google.com/mail/?view=cm&fs=1&to=pasutken73@email.com"
@@ -29,46 +32,65 @@ function Contact() {
             rel="noreferrer"
           >
             <span className="link-icon">@</span>
-            <span>pasutken73@email.com</span>
-            <span className="link-arrow">↗</span>
+            <span>
+              pasutken73@email.com
+            </span>
+            <span className="link-arrow">
+              ↗
+            </span>
           </a>
 
-          {/* Phone */}
           <a
             className="email-link"
-            href="tel:YOUR_PHONE_NUMBER"
+            href="tel:0958790271"
           >
             <span className="link-icon">☎</span>
-            <span>095-8790271</span>
-            <span className="link-arrow">↗</span>
+            <span>
+              095-8790271
+            </span>
+            <span className="link-arrow">
+              ↗
+            </span>
           </a>
 
-          {/* GitHub */}
           <a
             className="email-link"
             href="https://github.com/Pasutken"
             target="_blank"
             rel="noreferrer"
           >
-            <span className="link-icon">Git</span>
+            <span className="link-icon">
+              Git
+            </span>
+
             <span>GitHub</span>
-            <span className="link-arrow">↗</span>
+
+            <span className="link-arrow">
+              ↗
+            </span>
           </a>
 
-          {/* LinkedIn */}
           <a
             className="email-link"
             href="https://www.linkedin.com/in/pasut-fakchaeng-bb1809429/"
             target="_blank"
             rel="noreferrer"
           >
-            <span className="link-icon">in</span>
+            <span className="link-icon">
+              in
+            </span>
+
             <span>LinkedIn</span>
-            <span className="link-arrow">↗</span>
+
+            <span className="link-arrow">
+              ↗
+            </span>
           </a>
 
         </div>
+
       </div>
+
     </section>
   );
 }

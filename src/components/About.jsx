@@ -1,4 +1,4 @@
-function About() {
+function About({ t }) {
   return (
     <section
       id="about"
@@ -6,39 +6,34 @@ function About() {
     >
 
       <div className="section-label">
-        01 — ABOUT
+        {t.about.label}
       </div>
 
       <div className="about-content">
 
         <h2>
-          A developer who cares about
+          {t.about.title}
           <br />
           <span>
-            how things feel.
+            {t.about.title2}
           </span>
         </h2>
 
         <p>
-          I'm a Computer Science and Software
-          Development Innovation student interested
-          in Frontend Development and UX/UI Design.
-          I enjoy turning ideas into interfaces that
-          are simple, responsive, and easy to use.
+          {t.about.description}
         </p>
 
         <div className="stats">
 
           <div>
             <strong>3.83</strong>
-            <small>GPA</small>
+            <small>{t.about.gpa}</small>
           </div>
 
           <div>
             <strong>05</strong>
-            <small>Projects</small>
+            <small>{t.about.projects}</small>
           </div>
-
 
         </div>
 
