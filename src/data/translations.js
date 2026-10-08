@@ -8,31 +8,32 @@ const translations = {
             contact: "ติดต่อ",
         },
 
+
         hero: {
             eyebrow: "PORTFOLIO / 2026",
             title: "Frontend Developer",
-            subtitle: "& UX / UI Designer.",
+            subtitle: "",
             description:
-                "ผมสนใจการพัฒนาเว็บไซต์และการออกแบบประสบการณ์ผู้ใช้ โดยเน้นการสร้างเว็บไซต์ที่เรียบง่าย ใช้งานง่าย และรองรับทุกอุปกรณ์",
+                "ผมเป็นนักศึกษาสาขาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์ สนใจด้าน Frontend Development และการสร้างเว็บแอปพลิเคชันที่ใช้งานง่าย รองรับทุกอุปกรณ์ และสามารถนำไปใช้งานได้จริง",
             work: "ดูผลงานของผม",
             contact: "ติดต่อผม",
-            caption: "นักออกแบบและนักพัฒนา",
-            caption2: "สร้างสรรค์ผลงานสำหรับเว็บไซต์",
+            caption: "Frontend Developer",
+            caption2: "Building for the web.",
         },
 
         about: {
             label: "01 — เกี่ยวกับผม",
-            title: "นักพัฒนาที่ใส่ใจ",
-            title2: "ในความรู้สึกของผู้ใช้งาน",
+            title: "นักพัฒนา Frontend",
+            title2: "ที่ชอบสร้างเว็บให้ใช้งานได้จริง",
             description:
-                "ผมเป็นนักศึกษาสาขาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์ สนใจด้าน Frontend Development และ UX/UI Design และชอบเปลี่ยนไอเดียให้กลายเป็นเว็บไซต์ที่เรียบง่าย Responsive และใช้งานได้จริง",
+                "ผมเป็นนักศึกษาสาขาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์ที่มีความสนใจด้าน Frontend Development ผมชอบนำไอเดียมาพัฒนาเป็นเว็บแอปพลิเคชันที่รองรับการใช้งานบนทุกอุปกรณ์และสามารถใช้งานได้จริง โดยใช้เทคโนโลยีอย่าง HTML, CSS, JavaScript และ React และมองหาโอกาสในการพัฒนาทักษะและเรียนรู้เทคโนโลยีใหม่ ๆ ผ่านการทำโปรเจกต์อยู่เสมอ",
             gpa: "เกรดเฉลี่ย",
             projects: "โปรเจกต์",
         },
 
         projects: {
             label: "02 — ผลงาน",
-            description: "รวมผลงานและโปรเจกต์ที่ผมเคยพัฒนา",
+            description: "รวมเว็บไซต์และโปรเจกต์ที่ผมเคยพัฒนา",
             github: "GitHub",
             figma: "Figma",
             demo: "Demo",
@@ -48,8 +49,8 @@ const translations = {
         contact: {
             label: "04 — ติดต่อ",
             question: "มีโปรเจกต์หรือโอกาสที่น่าสนใจ?",
-            title: "มาสร้างสิ่งที่",
-            title2: "มีประโยชน์ไปด้วยกัน",
+            title: "มาสร้างเว็บไซต์ที่",
+            title2: "ใช้งานได้จริงไปด้วยกัน",
         },
 
         footer: {
@@ -70,28 +71,28 @@ const translations = {
         hero: {
             eyebrow: "PORTFOLIO / 2026",
             title: "Frontend Developer",
-            subtitle: "& UX / UI Designer.",
+            subtitle: "",
             description:
-                "I design and build clean, useful digital experiences with a focus on frontend development, user experience, and responsive interfaces.",
+                "I am a Computer Science and Software Development Innovation student focused on Frontend Development and building responsive, functional, and user-friendly web applications.",
             work: "View my work",
             contact: "Get in touch",
-            caption: "Designer & Developer",
-            caption2: "Creating for the web.",
+            caption: "Frontend Developer",
+            caption2: "Building for the web.",
         },
 
         about: {
             label: "01 — ABOUT",
-            title: "A developer who cares about",
-            title2: "how things feel.",
+            title: "A Frontend Developer",
+            title2: "who builds for the web.",
             description:
-                "I'm a Computer Science and Software Development Innovation student interested in Frontend Development and UX/UI Design. I enjoy turning ideas into interfaces that are simple, responsive, and easy to use.",
+                "I’m a Computer Science and Software Development Innovation student with a strong interest in Frontend Development. I enjoy turning ideas into responsive and functional web applications using technologies like HTML, CSS, JavaScript, and React. I’m always looking to improve my skills and learn new technologies through hands-on projects.",
             gpa: "GPA",
             projects: "Projects",
         },
 
         projects: {
             label: "02 — SELECTED WORK",
-            description: "A collection of projects and experiments.",
+            description: "A collection of websites and projects I've developed.",
             github: "GitHub",
             figma: "Figma",
             demo: "Demo",
@@ -107,8 +108,8 @@ const translations = {
         contact: {
             label: "04 — CONTACT",
             question: "Have a project or opportunity?",
-            title: "Let's make something",
-            title2: "useful.",
+            title: "Let's build something",
+            title2: "useful together.",
         },
 
         footer: {
@@ -116,6 +117,8 @@ const translations = {
             figma: "Figma",
         },
     },
+
+
 };
 
 export default translations;
