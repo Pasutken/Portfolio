@@ -33,12 +33,30 @@ const translations = {
 
         projects: {
             label: "02 — ผลงาน",
-            description: "รวมเว็บไซต์และโปรเจกต์ที่ผมเคยพัฒนา",
-            github: "GitHub",
-            figma: "Figma",
-            demo: "Demo",
-        },
 
+            description:
+                "รวมเว็บไซต์และโปรเจกต์ที่ผมเคยพัฒนา",
+
+            github: "GitHub",
+
+            figma: "Figma",
+
+            demo: "Demo",
+
+            viewProject: "ดูรายละเอียด",
+
+            about: "เกี่ยวกับโปรเจกต์",
+
+            problem: "ปัญหา",
+
+            features: "ฟีเจอร์หลัก",
+
+            role: "บทบาทของผม",
+
+            developed: "สิ่งที่ได้พัฒนา",
+
+            technologies: "เทคโนโลยี",
+        },
         skills: {
             label: "03 — SKILLS",
             languages: "Languages",
@@ -92,10 +110,29 @@ const translations = {
 
         projects: {
             label: "02 — SELECTED WORK",
-            description: "A collection of websites and projects I've developed.",
+
+            description:
+                "A collection of websites and projects I've developed.",
+
             github: "GitHub",
+
             figma: "Figma",
+
             demo: "Demo",
+
+            viewProject: "View Project",
+
+            about: "About the Project",
+
+            problem: "Problem",
+
+            features: "Key Features",
+
+            role: "My Role",
+
+            developed: "What I Developed",
+
+            technologies: "Technologies",
         },
 
         skills: {

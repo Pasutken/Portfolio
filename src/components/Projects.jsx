@@ -1,12 +1,11 @@
 import { projects } from "../data/projects";
 
-function Projects({ t }) {
+function Projects({ t, onSelectProject }) {
   return (
     <section
       id="projects"
       className="section container"
     >
-
       <div className="section-header">
 
         <div className="section-label">
@@ -27,25 +26,45 @@ function Projects({ t }) {
             key={project.id}
           >
 
-            <div className="project-image">
+            {/* Project Image */}
+            <button
+              className="project-image-button"
+              onClick={() =>
+                onSelectProject(project)
+              }
+              aria-label={`View ${project.title}`}
+            >
+              <div className="project-image">
 
-              {project.image ? (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                />
-              ) : (
-                <span>
-                  {String(project.id).padStart(2, "0")}
-                </span>
-              )}
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                  />
+                ) : (
+                  <span>
+                    {String(project.id).padStart(
+                      2,
+                      "0"
+                    )}
+                  </span>
+                )}
 
-            </div>
+                <div className="project-image-overlay">
+                  <span>
+                    {t.projects.viewProject}
+                  </span>
 
+                  <span>↗</span>
+                </div>
+
+              </div>
+            </button>
+
+            {/* Project Information */}
             <div className="project-info">
 
               <div>
-
                 <p className="project-type">
                   {project.type}
                 </p>
@@ -53,7 +72,6 @@ function Projects({ t }) {
                 <h3>
                   {project.title}
                 </h3>
-
               </div>
 
               <p className="project-description">
@@ -62,6 +80,7 @@ function Projects({ t }) {
 
             </div>
 
+            {/* Technologies */}
             <div className="tags">
 
               {project.tags.map((tag) => (
@@ -72,6 +91,7 @@ function Projects({ t }) {
 
             </div>
 
+            {/* Links */}
             <div className="project-links">
 
               {project.github && (
@@ -102,19 +122,16 @@ function Projects({ t }) {
                 </a>
               )}
 
-              {project.demo && (
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="link-icon">
-                    ↗
-                  </span>
+              <button
+                className="view-project-button"
+                onClick={() =>
+                  onSelectProject(project)
+                }
+              >
+                {t.projects.viewProject}
 
-                  {t.projects.demo}
-                </a>
-              )}
+                <span>↗</span>
+              </button>
 
             </div>
 
@@ -122,7 +139,6 @@ function Projects({ t }) {
         ))}
 
       </div>
-
     </section>
   );
 }

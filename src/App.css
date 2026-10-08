@@ -2,7 +2,7 @@
 
 
 /* ==================================================
-   ROOT
+   01. ROOT & VARIABLES
 ================================================== */
 
 :root {
@@ -19,7 +19,7 @@
 
 
 /* ==================================================
-   RESET
+   02. RESET & BASE
 ================================================== */
 
 * {
@@ -36,9 +36,7 @@ body {
   background: var(--bg);
   color: var(--text);
 
-  font-family:
-    "DM Sans",
-    sans-serif;
+  font-family: "DM Sans", sans-serif;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -63,21 +61,19 @@ img {
 
 
 /* ==================================================
-   CONTAINER
+   03. CONTAINER
 ================================================== */
 
 .container {
-  width: min(
-    calc(100% - 48px),
-    var(--container)
-  );
+  width: min(calc(100% - 48px),
+      var(--container));
 
   margin: 0 auto;
 }
 
 
 /* ==================================================
-   NAVBAR
+   04. NAVBAR
 ================================================== */
 
 .navbar {
@@ -88,29 +84,21 @@ img {
   z-index: 100;
 
   border-bottom:
-    1px solid
-    rgba(222, 222, 217, 0.7);
+    1px solid rgba(222, 222, 217, 0.7);
 
   background:
-    rgba(
-      247,
+    rgba(247,
       247,
       245,
-      0.9
-    );
+      0.9);
 
-  backdrop-filter:
-    blur(16px);
-
-  -webkit-backdrop-filter:
-    blur(16px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .nav-container {
-  width: min(
-    calc(100% - 48px),
-    var(--container)
-  );
+  width: min(calc(100% - 48px),
+      var(--container));
 
   height: 76px;
 
@@ -119,9 +107,7 @@ img {
   display: flex;
 
   align-items: center;
-
-  justify-content:
-    space-between;
+  justify-content: space-between;
 }
 
 .logo {
@@ -131,16 +117,13 @@ img {
 
   background: transparent;
 
-  font-family:
-    "Space Grotesk",
-    sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
   font-size: 19px;
 
   font-weight: 700;
 
-  letter-spacing:
-    -0.05em;
+  letter-spacing: -0.05em;
 }
 
 .logo span {
@@ -166,8 +149,7 @@ img {
 
   font-size: 14px;
 
-  transition:
-    color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .nav-links button:hover {
@@ -190,12 +172,57 @@ img {
 
 
 /* ==================================================
-   HERO
+   05. LANGUAGE SWITCH
+================================================== */
+
+.language-switch {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-left: 10px;
+  padding-left: 20px;
+
+  border-left: 1px solid var(--border);
+}
+
+.language-switch button {
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #999;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0.05em;
+
+  transition: color 0.2s ease;
+}
+
+.language-switch button:hover {
+  color: #111;
+}
+
+.language-switch button.active {
+  color: #111;
+}
+
+.language-switch>span {
+  color: #ccc;
+  font-size: 11px;
+}
+
+
+/* ==================================================
+   06. HERO
 ================================================== */
 
 .hero {
-  min-height:
-    calc(100vh - 76px);
+  min-height: calc(100vh - 76px);
 
   display: grid;
 
@@ -216,9 +243,7 @@ img {
 }
 
 
-/* ==================================================
-   HERO META
-================================================== */
+/* ---------- Hero Meta ---------- */
 
 .hero-meta {
   margin-bottom: 34px;
@@ -233,12 +258,11 @@ img {
 
   font-weight: 700;
 
-  letter-spacing:
-    0.13em;
+  letter-spacing: 0.13em;
 }
 
 
-/* NAME */
+/* ---------- Hero Name ---------- */
 
 .hero-name {
   display: flex;
@@ -253,20 +277,15 @@ img {
 
   padding-bottom: 8px;
 
-  border-bottom:
-    1px solid
-    #cfcfca;
+  border-bottom: 1px solid #cfcfca;
 
-  font-family:
-    "Space Grotesk",
-    sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
   font-size: 16px;
 
   font-weight: 500;
 
-  letter-spacing:
-    0.025em;
+  letter-spacing: 0.025em;
 
   color: #111;
 }
@@ -282,29 +301,20 @@ img {
 }
 
 
-/* ==================================================
-   HERO HEADING
-================================================== */
+/* ---------- Hero Heading ---------- */
 
 .hero h1 {
   margin: 0;
 
-  font-family:
-    "Space Grotesk",
-    sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
-  font-size:
-    clamp(
-      55px,
+  font-size: clamp(55px,
       7vw,
-      94px
-    );
+      94px);
 
-  line-height:
-    0.95;
+  line-height: 0.95;
 
-  letter-spacing:
-    -0.065em;
+  letter-spacing: -0.065em;
 
   font-weight: 600;
 }
@@ -314,9 +324,7 @@ img {
 }
 
 
-/* ==================================================
-   HERO DESCRIPTION
-================================================== */
+/* ---------- Hero Description ---------- */
 
 .hero-description {
   max-width: 570px;
@@ -331,9 +339,7 @@ img {
 }
 
 
-/* ==================================================
-   HERO BUTTONS
-================================================== */
+/* ---------- Hero Buttons ---------- */
 
 .hero-buttons {
   display: flex;
@@ -356,13 +362,9 @@ img {
 
   min-height: 50px;
 
-  padding:
-    0 20px;
+  padding: 0 20px;
 
-  border:
-    1px solid
-    #111;
-
+  border: 1px solid #111;
   border-radius: 999px;
 
   background: #111;
@@ -377,8 +379,7 @@ img {
 }
 
 .primary-button:hover {
-  transform:
-    translateY(-2px);
+  transform: translateY(-2px);
 
   background: #2b2b2b;
 }
@@ -388,14 +389,11 @@ img {
 
   line-height: 1;
 
-  transition:
-    transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
-.primary-button:hover
-.button-arrow {
-  transform:
-    translate(2px, -2px);
+.primary-button:hover .button-arrow {
+  transform: translate(2px, -2px);
 }
 
 .secondary-button {
@@ -405,8 +403,7 @@ img {
 
   min-height: 50px;
 
-  padding:
-    0 0;
+  padding: 0;
 
   border: none;
 
@@ -416,8 +413,7 @@ img {
 
   font-size: 14px;
 
-  transition:
-    color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .secondary-button:hover {
@@ -426,7 +422,7 @@ img {
 
 
 /* ==================================================
-   PROFILE
+   07. HERO PROFILE
 ================================================== */
 
 .hero-profile {
@@ -442,8 +438,7 @@ img {
 
   width: 100%;
 
-  aspect-ratio:
-    4 / 5;
+  aspect-ratio: 4 / 5;
 
   overflow: hidden;
 
@@ -470,31 +465,27 @@ img {
 
   filter: none;
 
-  transition:
-    transform 0.4s ease;
+  transition: transform 0.4s ease;
 }
 
-.profile-frame:hover
-.profile-image {
-  transform:
-    scale(1.02);
+.profile-frame:hover .profile-image {
+  transform: scale(1.02);
 }
 
 
-/* PROFILE CAPTION */
+/* ---------- Profile Caption ---------- */
 
 .profile-caption {
   display: flex;
 
   align-items: flex-start;
 
-  justify-content:
-    space-between;
+  justify-content: space-between;
 
   padding-top: 11px;
 }
 
-.profile-caption > span {
+.profile-caption>span {
   color: #aaa;
 
   font-size: 10px;
@@ -516,7 +507,7 @@ img {
 
 
 /* ==================================================
-   OLD HERO SIDE
+   08. OLD HERO SIDE
 ================================================== */
 
 .hero-side {
@@ -546,19 +537,15 @@ img {
 }
 
 .hero-number {
-  margin:
-    55px 0 5px;
+  margin: 55px 0 5px;
 
   color: #e3e3de;
 
-  font-family:
-    "Space Grotesk",
-    sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
   font-size: 120px;
 
-  letter-spacing:
-    -0.08em;
+  letter-spacing: -0.08em;
 }
 
 .hero-side p {
@@ -571,53 +558,42 @@ img {
 
 
 /* ==================================================
-   SECTIONS
+   09. GENERAL SECTIONS
 ================================================== */
 
 .section {
-  padding:
-    120px 0;
+  padding: 120px 0;
 
-  border-top:
-    1px solid
-    var(--border);
+  border-top: 1px solid var(--border);
 }
 
 
 /* ==================================================
-   ABOUT
+   10. ABOUT
 ================================================== */
 
 .about {
   display: grid;
 
   grid-template-columns:
-    220px
-    minmax(0, 1fr);
+    220px minmax(0, 1fr);
 
   gap: 80px;
 }
 
 .about h2,
 .contact h2 {
-  margin:
-    0 0 30px;
+  margin: 0 0 30px;
 
-  font-family:
-    "Space Grotesk",
-    sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
-  font-size:
-    clamp(
-      38px,
+  font-size: clamp(38px,
       5vw,
-      66px
-    );
+      66px);
 
   line-height: 1.02;
 
-  letter-spacing:
-    -0.055em;
+  letter-spacing: -0.055em;
 
   font-weight: 600;
 }
@@ -627,7 +603,7 @@ img {
   color: #888;
 }
 
-.about-content > p {
+.about-content>p {
   max-width: 680px;
 
   margin: 0;
@@ -640,7 +616,7 @@ img {
 }
 
 
-/* STATS */
+/* ---------- About Stats ---------- */
 
 .stats {
   display: flex;
@@ -657,9 +633,7 @@ img {
 }
 
 .stats strong {
-  font-family:
-    "Space Grotesk",
-    sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
   font-size: 35px;
 
@@ -673,22 +647,23 @@ img {
 
   font-size: 11px;
 
-  letter-spacing:
-    0.12em;
+  letter-spacing: 0.12em;
 }
 
 
 /* ==================================================
-   PROJECTS
+   11. PROJECTS
 ================================================== */
+
+
+/* ---------- Project Header ---------- */
 
 .section-header {
   display: flex;
 
   align-items: flex-end;
 
-  justify-content:
-    space-between;
+  justify-content: space-between;
 
   margin-bottom: 50px;
 }
@@ -701,22 +676,25 @@ img {
   font-size: 13px;
 }
 
+
+/* ---------- Project Grid ---------- */
+
 .project-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(
-      2,
-      minmax(0, 1fr)
-    );
+    repeat(2,
+      minmax(0, 1fr));
 
-  gap:
-    55px 28px;
+  gap: 55px 28px;
 }
 
 .project-card {
   min-width: 0;
 }
+
+
+/* ---------- Project Image ---------- */
 
 .project-image {
   position: relative;
@@ -727,27 +705,23 @@ img {
 
   justify-content: center;
 
-  aspect-ratio:
-    16 / 10;
+  aspect-ratio: 16 / 10;
 
   overflow: hidden;
 
   background: #e9e9e4;
 }
 
-.project-image > span {
+.project-image>span {
   color: #d8d8d2;
 
-  font-family:
-    "Space Grotesk",
-    sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
   font-size: 120px;
 
   font-weight: 600;
 
-  letter-spacing:
-    -0.08em;
+  letter-spacing: -0.08em;
 }
 
 .project-image img {
@@ -759,18 +733,15 @@ img {
 
   object-fit: cover;
 
-  transition:
-    transform 0.45s ease;
+  transition: transform 0.45s ease;
 }
 
-.project-card:hover
-.project-image img {
-  transform:
-    scale(1.025);
+.project-card:hover .project-image img {
+  transform: scale(1.025);
 }
 
 
-/* PROJECT ARROW */
+/* ---------- Project Arrow ---------- */
 
 .project-arrow {
   position: absolute;
@@ -790,23 +761,18 @@ img {
   justify-content: center;
 
   border:
-    1px solid
-    rgba(
+    1px solid rgba(17,
       17,
       17,
-      17,
-      0.2
-    );
+      0.2);
 
   border-radius: 50%;
 
   background:
-    rgba(
+    rgba(255,
       255,
       255,
-      255,
-      0.9
-    );
+      0.9);
 
   color: #111;
 
@@ -819,19 +785,14 @@ img {
     background 0.25s ease;
 }
 
-.project-card:hover
-.project-arrow {
-  transform:
-    translate(
-      3px,
-      -3px
-    );
+.project-card:hover .project-arrow {
+  transform: translate(3px, -3px);
 
   background: #fff;
 }
 
 
-/* PROJECT INFO */
+/* ---------- Project Info ---------- */
 
 .project-info {
   display: grid;
@@ -845,8 +806,7 @@ img {
 }
 
 .project-type {
-  margin:
-    0 0 8px;
+  margin: 0 0 8px;
 
   color: #888;
 
@@ -854,23 +814,19 @@ img {
 
   font-weight: 700;
 
-  letter-spacing:
-    0.13em;
+  letter-spacing: 0.13em;
 }
 
 .project-info h3 {
   margin: 0;
 
-  font-family:
-    "Space Grotesk",
-    sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
   font-size: 25px;
 
   line-height: 1.15;
 
-  letter-spacing:
-    -0.025em;
+  letter-spacing: -0.025em;
 
   font-weight: 600;
 }
@@ -886,7 +842,7 @@ img {
 }
 
 
-/* TAGS */
+/* ---------- Project Tags ---------- */
 
 .tags {
   display: flex;
@@ -899,12 +855,10 @@ img {
 }
 
 .tags span {
-  padding:
-    6px 10px;
+  padding: 6px 10px;
 
   border:
-    1px solid
-    var(--border);
+    1px solid var(--border);
 
   border-radius: 999px;
 
@@ -916,7 +870,7 @@ img {
 }
 
 
-/* PROJECT LINKS */
+/* ---------- Project Links ---------- */
 
 .project-links {
   display: flex;
@@ -939,8 +893,7 @@ img {
 
   font-size: 12px;
 
-  transition:
-    color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .project-links a:hover {
@@ -959,8 +912,7 @@ img {
   justify-content: center;
 
   border:
-    1px solid
-    currentColor;
+    1px solid currentColor;
 
   border-radius: 4px;
 
@@ -973,15 +925,14 @@ img {
 
 
 /* ==================================================
-   SKILLS
+   12. SKILLS
 ================================================== */
 
 .skills {
   display: grid;
 
   grid-template-columns:
-    220px
-    minmax(0, 1fr);
+    220px minmax(0, 1fr);
 
   gap: 80px;
 }
@@ -990,29 +941,22 @@ img {
   display: grid;
 
   grid-template-columns:
-    60px
-    180px
-    minmax(0, 1fr);
+    60px 180px minmax(0, 1fr);
 
   gap: 20px;
 
   align-items: center;
 
-  padding:
-    27px 0;
+  padding: 27px 0;
 
-  border-bottom:
-    1px solid
-    var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .skill-row:first-child {
-  border-top:
-    1px solid
-    var(--border);
+  border-top: 1px solid var(--border);
 }
 
-.skill-row > span {
+.skill-row>span {
   color: #aaa;
 
   font-size: 11px;
@@ -1021,9 +965,7 @@ img {
 .skill-row h3 {
   margin: 0;
 
-  font-family:
-    "Space Grotesk",
-    sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
   font-size: 21px;
 
@@ -1042,7 +984,7 @@ img {
 
 
 /* ==================================================
-   CONTACT
+   13. CONTACT
 ================================================== */
 
 .contact {
@@ -1050,9 +992,7 @@ img {
 
   padding-bottom: 90px;
 
-  border-top:
-    1px solid
-    var(--border);
+  border-top: 1px solid var(--border);
 }
 
 .contact-content {
@@ -1061,9 +1001,8 @@ img {
   margin-left: 220px;
 }
 
-.contact-content > p {
-  margin:
-    0 0 28px;
+.contact-content>p {
+  margin: 0 0 28px;
 
   color: #999;
 
@@ -1073,6 +1012,9 @@ img {
 .contact-content h2 {
   margin-bottom: 0;
 }
+
+
+/* ---------- Contact Links ---------- */
 
 .contact-links {
   display: flex;
@@ -1087,9 +1029,7 @@ img {
 
   margin-top: 45px;
 
-  border-top:
-    1px solid
-    var(--border);
+  border-top: 1px solid var(--border);
 }
 
 .contact-links .email-link {
@@ -1103,12 +1043,9 @@ img {
 
   gap: 14px;
 
-  padding:
-    17px 4px;
+  padding: 17px 4px;
 
-  border-bottom:
-    1px solid
-    var(--border);
+  border-bottom: 1px solid var(--border);
 
   color: #111;
 
@@ -1141,9 +1078,7 @@ img {
     color 0.25s ease;
 }
 
-.contact-links
-.email-link:hover
-.link-icon {
+.contact-links .email-link:hover .link-icon {
   background: #111;
 
   border-color: #111;
@@ -1151,9 +1086,7 @@ img {
   color: #fff;
 }
 
-.contact-links
-.email-link
-> span:nth-child(2) {
+.contact-links .email-link>span:nth-child(2) {
   font-size: 14px;
 }
 
@@ -1164,40 +1097,29 @@ img {
 
   line-height: 1;
 
-  transition:
-    transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
-.contact-links
-.email-link:hover
-.link-arrow {
-  transform:
-    translate(
-      3px,
-      -3px
-    );
+.contact-links .email-link:hover .link-arrow {
+  transform: translate(3px, -3px);
 }
 
 
 /* ==================================================
-   FOOTER
+   14. FOOTER
 ================================================== */
 
 .footer {
   display: flex;
 
   align-items: center;
-
-  justify-content:
-    space-between;
+  justify-content: space-between;
 
   padding-top: 25px;
 
   padding-bottom: 35px;
 
-  border-top:
-    1px solid
-    var(--border);
+  border-top: 1px solid var(--border);
 
   color: #999;
 
@@ -1210,52 +1132,445 @@ img {
   gap: 20px;
 }
 
-/* LANGUAGE SWITCH */
 
-.language-switch {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-left: 10px;
-  padding-left: 20px;
-  border-left: 1px solid var(--border);
+/* ==================================================
+   15. PROJECT POPUP
+================================================== */
+
+
+/* ---------- Popup Trigger ---------- */
+
+.project-image-button {
+  display: block;
+
+  width: 100%;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
 }
 
-.language-switch button {
+.project-image-button .project-image {
+  position: relative;
+}
+
+.project-image-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  background: rgba(17, 17, 17, 0.72);
+
+  color: #fff;
+
+  font-size: 13px;
+
+  opacity: 0;
+
+  transition: opacity 0.25s ease;
+}
+
+.project-image-button:hover .project-image-overlay {
+  opacity: 1;
+}
+
+
+/* ---------- View Project Button ---------- */
+
+.view-project-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
   padding: 0;
+
   border: none;
+
   background: transparent;
-  color: #999;
+
+  color: #666;
+
   font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+
+  cursor: pointer;
+
   transition: color 0.2s ease;
 }
 
-.language-switch button:hover {
+.view-project-button:hover {
   color: #111;
 }
 
-.language-switch button.active {
-  color: #111;
-}
-
-.language-switch > span {
-  color: #ccc;
-  font-size: 11px;
+.view-project-button span {
+  font-size: 15px;
 }
 
 
 /* ==================================================
-   TABLET
+   16. PROJECT MODAL
+================================================== */
+
+
+/* ---------- Overlay ---------- */
+
+.project-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+
+/* ---------- Modal Container ---------- */
+
+.project-modal {
+  position: relative;
+
+  width: min(820px,
+      100%);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  padding: 42px;
+
+  background: var(--surface);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.15);
+
+  animation:
+    projectModalIn 0.25s ease;
+}
+
+
+/* ---------- Modal Animation ---------- */
+
+@keyframes projectModalIn {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(20px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0) scale(1);
+  }
+}
+
+
+/* ---------- Close Button ---------- */
+
+.project-modal-close {
+  position: absolute;
+
+  top: 16px;
+  right: 18px;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #777;
+
+  font-size: 28px;
+  font-weight: 300;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-modal-close:hover {
+  color: #111;
+
+  transform: rotate(90deg);
+}
+
+
+/* ---------- Modal Header ---------- */
+
+.project-modal-header {
+  padding-right: 45px;
+
+  margin-bottom: 28px;
+}
+
+.project-modal-type {
+  margin: 0 0 9px;
+
+  color: #888;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+.project-modal-header h2 {
+  margin: 0;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: clamp(34px,
+      5vw,
+      58px);
+
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+
+  font-weight: 600;
+}
+
+.project-modal-description {
+  max-width: 650px;
+
+  margin: 15px 0 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ---------- Modal Image ---------- */
+
+.project-modal-image {
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  margin-bottom: 30px;
+
+  background: #eeeeea;
+}
+
+.project-modal-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* ---------- Modal Content Sections ---------- */
+
+.project-modal-section {
+  padding: 23px 0;
+
+  border-top: 1px solid var(--border);
+}
+
+.project-modal-label {
+  margin: 0 0 11px;
+
+  color: #999;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+}
+
+.project-modal-text {
+  max-width: 680px;
+
+  margin: 0;
+
+  color: #666;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ---------- Feature List ---------- */
+
+.project-feature-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.project-feature-list li {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  color: #555;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.project-feature-list li span {
+  flex-shrink: 0;
+
+  color: #999;
+
+  font-weight: 600;
+}
+
+
+/* ---------- Technology Tags ---------- */
+
+.project-modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+.project-modal-tags span {
+  padding: 7px 11px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 999px;
+
+  color: #666;
+
+  font-size: 11px;
+}
+
+
+/* ---------- Modal Links ---------- */
+
+.project-modal-links {
+  display: flex;
+
+  gap: 10px;
+
+  padding-top: 25px;
+}
+
+.project-modal-links a {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 11px 16px;
+
+  border:
+    1px solid var(--border);
+
+  color: #333;
+
+  font-size: 12px;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.project-modal-links a:hover {
+  border-color: #111;
+
+  background: #111;
+
+  color: #fff;
+}
+
+.project-modal-links a span {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.project-modal-links a b {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+/* ---------- Modal Scrollbar ---------- */
+
+.project-modal::-webkit-scrollbar {
+  width: 5px;
+}
+
+.project-modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.project-modal::-webkit-scrollbar-thumb {
+  background: #d0d0ca;
+
+  border-radius: 10px;
+}
+
+.project-modal::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+
+/* ==================================================
+   17. TABLET
 ================================================== */
 
 @media (max-width: 1024px) {
 
+  /* ---------- Hero ---------- */
+
   .hero {
     grid-template-columns:
-      minmax(0, 1fr)
-      200px;
+      minmax(0, 1fr) 200px;
 
     gap: 50px;
 
@@ -1266,33 +1581,38 @@ img {
 
   .hero h1 {
     font-size:
-      clamp(
-        50px,
+      clamp(50px,
         7vw,
-        76px
-      );
+        76px);
   }
 
   .hero-profile {
     max-width: 200px;
   }
 
+
+  /* ---------- About / Skills ---------- */
+
   .about,
   .skills {
     grid-template-columns:
-      180px
-      minmax(0, 1fr);
+      180px minmax(0, 1fr);
 
     gap: 55px;
   }
+
+
+  /* ---------- Contact ---------- */
 
   .contact-content {
     margin-left: 180px;
   }
 
+
+  /* ---------- Projects ---------- */
+
   .project-info {
-    grid-template-columns:
-      1fr;
+    grid-template-columns: 1fr;
   }
 
   .project-description {
@@ -1302,24 +1622,22 @@ img {
 
 
 /* ==================================================
-   MOBILE
+   18. MOBILE
 ================================================== */
 
 @media (max-width: 760px) {
 
-  /* CONTAINER */
+  /* ---------- Container ---------- */
 
   .container {
-    width:
-      calc(100% - 32px);
+    width: calc(100% - 32px);
   }
 
 
-  /* NAVBAR */
+  /* ---------- Navbar ---------- */
 
   .nav-container {
-    width:
-      calc(100% - 32px);
+    width: calc(100% - 32px);
 
     height: 68px;
   }
@@ -1345,14 +1663,12 @@ img {
 
     gap: 5px;
 
-    padding:
-      18px 16px 25px;
+    padding: 18px 16px 25px;
 
     background: #f7f7f5;
 
     border-bottom:
-      1px solid
-      var(--border);
+      1px solid var(--border);
   }
 
   .nav-links.open {
@@ -1362,14 +1678,25 @@ img {
   .nav-links button {
     width: 100%;
 
-    padding:
-      13px 8px;
+    padding: 13px 8px;
 
     text-align: left;
   }
 
 
-  /* HERO */
+  /* ---------- Language Switch ---------- */
+
+  .language-switch {
+    margin-top: 10px;
+    margin-left: 8px;
+
+    padding-left: 8px;
+
+    border-left: none;
+  }
+
+
+  /* ---------- Hero ---------- */
 
   .hero {
     min-height: auto;
@@ -1392,7 +1719,7 @@ img {
   }
 
 
-  /* HERO META */
+  /* ---------- Hero Meta ---------- */
 
   .hero-meta {
     margin-bottom: 30px;
@@ -1405,22 +1732,19 @@ img {
   }
 
 
-  /* HERO HEADING */
+  /* ---------- Hero Heading ---------- */
 
   .hero h1 {
     font-size:
-      clamp(
-        46px,
+      clamp(46px,
         13vw,
-        68px
-      );
+        68px);
 
-    line-height:
-      0.96;
+    line-height: 0.96;
   }
 
 
-  /* DESCRIPTION */
+  /* ---------- Hero Description ---------- */
 
   .hero-description {
     max-width: 100%;
@@ -1433,7 +1757,7 @@ img {
   }
 
 
-  /* BUTTONS */
+  /* ---------- Hero Buttons ---------- */
 
   .hero-buttons {
     gap: 20px;
@@ -1446,8 +1770,7 @@ img {
   .primary-button {
     min-height: 48px;
 
-    padding:
-      0 18px;
+    padding: 0 18px;
   }
 
   .secondary-button {
@@ -1455,7 +1778,7 @@ img {
   }
 
 
-  /* PROFILE */
+  /* ---------- Profile ---------- */
 
   .hero-profile {
     width: 180px;
@@ -1480,22 +1803,21 @@ img {
   }
 
 
-  /* OLD HERO SIDE */
+  /* ---------- Old Hero Side ---------- */
 
   .hero-side {
     display: none;
   }
 
 
-  /* SECTIONS */
+  /* ---------- Sections ---------- */
 
   .section {
-    padding:
-      85px 0;
+    padding: 85px 0;
   }
 
 
-  /* ABOUT */
+  /* ---------- About ---------- */
 
   .about,
   .skills {
@@ -1514,14 +1836,14 @@ img {
     line-height: 1;
   }
 
-  .about-content > p {
+  .about-content>p {
     font-size: 15px;
 
     line-height: 1.75;
   }
 
 
-  /* STATS */
+  /* ---------- Stats ---------- */
 
   .stats {
     gap: 38px;
@@ -1534,7 +1856,7 @@ img {
   }
 
 
-  /* PROJECT HEADER */
+  /* ---------- Project Header ---------- */
 
   .section-header {
     display: block;
@@ -1549,27 +1871,24 @@ img {
   }
 
 
-  /* PROJECTS */
+  /* ---------- Projects ---------- */
 
   .project-grid {
-    grid-template-columns:
-      1fr;
+    grid-template-columns: 1fr;
 
     gap: 60px;
   }
 
   .project-image {
-    aspect-ratio:
-      16 / 10;
+    aspect-ratio: 16 / 10;
   }
 
-  .project-image > span {
+  .project-image>span {
     font-size: 90px;
   }
 
   .project-info {
-    grid-template-columns:
-      1fr;
+    grid-template-columns: 1fr;
 
     gap: 10px;
 
@@ -1593,17 +1912,15 @@ img {
   }
 
 
-  /* SKILLS */
+  /* ---------- Skills ---------- */
 
   .skill-row {
     grid-template-columns:
-      40px
-      minmax(0, 1fr);
+      40px minmax(0, 1fr);
 
     gap: 12px;
 
-    padding:
-      22px 0;
+    padding: 22px 0;
   }
 
   .skill-row p {
@@ -1617,7 +1934,7 @@ img {
   }
 
 
-  /* CONTACT */
+  /* ---------- Contact ---------- */
 
   .contact {
     padding-top: 85px;
@@ -1631,47 +1948,39 @@ img {
     margin-top: 35px;
   }
 
-  .contact-content > p {
+  .contact-content>p {
     margin-bottom: 22px;
   }
 
   .contact h2 {
     font-size:
-      clamp(
-        40px,
+      clamp(40px,
         11vw,
-        52px
-      );
+        52px);
   }
 
   .contact-links {
     margin-top: 40px;
   }
 
-  .contact-links
-  .email-link {
-    padding:
-      16px 2px;
+  .contact-links .email-link {
+    padding: 16px 2px;
 
     gap: 12px;
   }
 
-  .contact-links
-  .email-link:hover {
+  .contact-links .email-link:hover {
     padding-left: 6px;
   }
 
-  .contact-links
-  .email-link
-  > span:nth-child(2) {
+  .contact-links .email-link>span:nth-child(2) {
     font-size: 13px;
 
-    overflow-wrap:
-      anywhere;
+    overflow-wrap: anywhere;
   }
 
 
-  /* FOOTER */
+  /* ---------- Footer ---------- */
 
   .footer {
     flex-direction: column;
@@ -1686,14 +1995,72 @@ img {
   .footer div {
     gap: 15px;
   }
+
+
+  /* ---------- Project Modal ---------- */
+
+  .project-modal-overlay {
+    padding: 14px;
+  }
+
+  .project-modal {
+    max-height: 92vh;
+
+    padding: 32px 22px;
+  }
+
+  .project-modal-close {
+    top: 10px;
+    right: 10px;
+  }
+
+  .project-modal-header {
+    padding-right: 35px;
+
+    margin-bottom: 22px;
+  }
+
+  .project-modal-header h2 {
+    font-size: 36px;
+  }
+
+  .project-modal-description {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+  .project-modal-image {
+    margin-bottom: 20px;
+  }
+
+  .project-modal-section {
+    padding: 19px 0;
+  }
+
+  .project-modal-text {
+    font-size: 13px;
+  }
+
+  .project-feature-list li {
+    font-size: 13px;
+  }
+
+  .project-modal-links {
+    flex-wrap: wrap;
+
+    padding-top: 20px;
+  }
 }
 
 
 /* ==================================================
-   SMALL MOBILE
+   19. SMALL MOBILE
 ================================================== */
 
 @media (max-width: 420px) {
+
+  /* ---------- Hero ---------- */
 
   .hero {
     padding-top: 60px;
@@ -1707,11 +2074,9 @@ img {
 
   .hero h1 {
     font-size:
-      clamp(
-        43px,
+      clamp(43px,
         13vw,
-        58px
-      );
+        58px);
   }
 
   .hero-description {
@@ -1738,6 +2103,9 @@ img {
     width: fit-content;
   }
 
+
+  /* ---------- Stats ---------- */
+
   .stats {
     gap: 25px;
   }
@@ -1750,6 +2118,9 @@ img {
     font-size: 9px;
   }
 
+
+  /* ---------- Projects ---------- */
+
   .project-grid {
     gap: 50px;
   }
@@ -1758,16 +2129,11 @@ img {
     font-size: 21px;
   }
 
+
+  /* ---------- Contact ---------- */
+
   .contact h2 {
     font-size: 38px;
   }
-}
 
-@media (max-width: 760px) {
-  .language-switch {
-    margin-top: 10px;
-    margin-left: 8px;
-    padding-left: 8px;
-    border-left: none;
-  }
 }
